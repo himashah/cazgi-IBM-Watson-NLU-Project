@@ -42,8 +42,6 @@ app.get("/",(req,res)=>{
 app.get("/url/emotion", (req,res) => {
     // //Extract the url passed from the client through the request object
      let urlToAnalyze = req.query.url
-     console.log("i m here")
-     console.log(urlToAnalyze);
      const analyzeParams = 
         {
             "url": urlToAnalyze,
